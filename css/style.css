@@ -95,10 +95,10 @@ body{
     cursor: pointer;
 }
 
-@media  only screen and (min-width: 679px) {
+@media  only screen and (min-width: 765px) {
     .card {
         display: flex;
-        max-width: 679px;
+        max-width: 680px;
     }
 
     .mobile-image {

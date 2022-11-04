@@ -19,18 +19,22 @@ body{
     font-family: "montserrat", sans-serif;
     font-size: 1rem;
     background-color: var(--Cream);
-    padding: 20px 0;
+    margin: 7em auto;
+}
+
+.paraheading {
+    letter-spacing: 5px;
 }
 
 .card {
     background-color: var(--White);
-    width: 80%;
+    width: 90%;
     max-width: 300px;
     border-radius: 3%;
     margin:0 auto;
 }
 
-.section1 img {
+.mobile-image {
     max-width: 100%;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -88,11 +92,13 @@ body{
     border: 2px solid var(--Dark-cyan);
     border-radius: 8px;
     display: block;
+    cursor: pointer;
 }
 
-@media  only screen and (min-width: 768px) {
+@media  only screen and (min-width: 679px) {
     .card {
         display: flex;
+        max-width: 620px;
     }
 
     .mobile-image {
@@ -101,6 +107,8 @@ body{
 
     .desktop-image {
         display: block;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        max-width: 100%;
     }
-
 }

@@ -19,7 +19,7 @@
 body{
     min-height: 100vh;
     font-family: "montserrat", sans-serif;
-    font-size: 1rem;
+    font-size: .875rem;
     background-color: var(--Cream);
     display: flex;
     justify-content: center;
@@ -31,16 +31,17 @@ body{
     max-width: 300px;
     border-radius: 8px;
     background-color: var(--White);
+    overflow: hidden;
 }
 
-.mobile-image {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .part2 {
-    padding: 2em 1.5em; 
+    padding: 2em; 
 }
 
 .part2 .paraheading {
@@ -50,40 +51,47 @@ body{
 }
 
 .part2 h1{
-    margin-bottom: .5em;
+    margin: .5em 0;
     font-family: "fraunces", serif;
     font-size: 2rem;
 } 
 
 .part2 .paragraph{
+     line-height: 1.5;
      margin-bottom: .8em;
      color: var(--Dark-grayish-blue);
 }
 
 .price-tag {
     display: flex;
-    margin-bottom: .8em;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1.5em;
 }
 
 .discount-amount {
-    margin-right: .3em;
     font-size: 2rem;
     color: var(--Dark-cyan);
-    font-family: fraunces;
+    font-family: "fraunces";
 }
 
 .amount {
     margin-top: .7em;
     color: var(--Dark-grayish-blue);
+    font-size: 0.625rem;
 }
 
 button.icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
     background-color: var(--Dark-cyan);
     color: var(--White);
-    padding: .75em 0;
     border: none;
+    padding: .75em 0;
     font-weight: 700;
-    border-radius: 8px;;
+    border-radius: 8px;
     cursor: pointer;
     width: 100%;
 }
@@ -92,14 +100,11 @@ button.icon:hover {
     background-color: var(--Very-dark-green );
 }
 
-button.icon img {
-    padding-right: .437em;
-}
 
 @media  only screen and (min-width: 616px){
     .card {
         display: flex;
-        max-width: 560px;
+        max-width: 530px;
     }
 
     .box {
@@ -108,12 +113,5 @@ button.icon img {
 
     .part2 {
         height: 100%;
-    }
-
-    .desktop-image {
-        width: 100%;
-        height: 100%;
-        border-top-left-radius: 8px;
-        border-bottom-left-radius: 8px;
     }
 } 

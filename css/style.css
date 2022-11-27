@@ -72,7 +72,7 @@ img {
 .discount-amount {
     font-size: 2rem;
     color: var(--Dark-cyan);
-    font-family: 'Fraunces';
+    font-family: 'Fraunces',serif;
 }
 
 .amount {

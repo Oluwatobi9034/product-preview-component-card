@@ -18,7 +18,7 @@
 
 body{
     min-height: 100vh;
-    font-family: "montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: .875rem;
     background-color: var(--Cream);
     display: flex;
@@ -52,7 +52,7 @@ img {
 
 .part2 h1{
     margin: .5em 0;
-    font-family: "fraunces", serif;
+    font-family: 'Fraunces', serif;
     font-size: 2rem;
 } 
 
@@ -72,11 +72,11 @@ img {
 .discount-amount {
     font-size: 2rem;
     color: var(--Dark-cyan);
-    font-family: "fraunces";
+    font-family: 'Fraunces';
 }
 
 .amount {
-    margin-top: .7em;
+    align-self: center;
     color: var(--Dark-grayish-blue);
     font-size: 0.625rem;
 }
